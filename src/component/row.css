@@ -1,0 +1,42 @@
+.column {
+    float: left;
+    padding: 10px;
+  }
+  
+  /* Left and right column */
+  .column.side {
+    width: 30%;
+    height: 620px;
+    margin-top: 25px;
+    margin-left: 25px;
+    background-color:rgb(238, 90, 90);
+  }
+  
+  /* Middle column */
+  .column.side1 {
+    width: 66%;
+   margin-top: 25px;
+    height: 620px;
+    margin-right: 25px;
+   background-color:rgb(231, 185, 125);
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .text
+  {
+    margin-top: 10px;
+    margin-left: 90px;
+    margin-right: 50px;
+    width: 500px;
+    color: black;
+  }
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width:600px) {
+    .column {
+      width: 100%;
+    }
+  }
